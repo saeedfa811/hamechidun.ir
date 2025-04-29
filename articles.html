@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>پرسش‌های پرجستجو - همچی‌دون</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      margin: 0;
+      direction: rtl;
+      background: linear-gradient(to bottom, #fff7f0, #f2f9ff);
+      color: #333;
+    }
+
+    header {
+      background-color: #2BC4C4;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    header img {
+      width: 70px;
+      height: auto;
+      margin-left: 15px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: white;
+      margin: 0;
+    }
+
+    .menu-icon {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      background-color: #FF8A65;
+      color: white;
+      padding: 10px 15px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .side-menu {
+      position: fixed;
+      right: -250px;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      background-color: white;
+      box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+      transition: right 0.3s ease;
+      z-index: 999;
+      padding: 20px;
+    }
+
+    .side-menu.open {
+      right: 0;
+    }
+
+    .side-menu h3 {
+      margin-top: 0;
+      color: #2BC4C4;
+    }
+
+    .side-menu a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #eee;
+    }
+
+    .side-menu a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .search-box {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border-right: 5px solid #FF8A65;
+      margin-bottom: 20px;
+    }
+
+    .search-box h2 {
+      color: #E64A19;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .search-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .search-box li {
+      font-size: 18px;
+      line-height: 1.9;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: linear-gradient(to left, #FF8A65, #2BC4C4);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      margin-top: 60px;
+    }
+
+    footer h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    footer span {
+      font-size: 16px;
+      display: block;
+      margin-top: 5px;
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <div class="side-menu" id="menu">
+    <h3>منوی سایت</h3>
+    <a href="#">صفحه اصلی</a>
+    <a href="#">درباره ما</a>
+    <a href="#">مقالات</a>
+    <a href="#">تماس با ما</a>
+  </div>
+
+  <header>
+    <img src="logo.png" alt="لوگوی همچی‌دون">
+    <h1>پرسش‌های پرجستجو</h1>
+  </header>
+
+  <div class="content">
+    <div class="search-box">
+      <h2>پرسش‌های پرجستجو</h2>
+      <ul>
+        <li>چگونه یک سایت راه‌اندازی کنم؟</li>
+        <li>بهترین روش‌های جستجوی اطلاعات آنلاین</li>
+        <li>چطور مشکلات کامپیوتر را حل کنم؟</li>
+        <li>چگونه به زبان انگلیسی مسلط شوم؟</li>
+        <li>روش‌های افزایش بازدهی در کارهای روزانه</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <h3>با ❤️ ساخته شده توسط تیم همچی‌دون</h3>
+    <span>هر روز باهوش‌تر، هر روز پرسش‌گرتر!</span>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
